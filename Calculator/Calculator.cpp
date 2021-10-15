@@ -3,6 +3,9 @@
 
 #include "pch.h"
 #include <iostream>
+#include<stdio.h>
+#include<ctype.h>
+
 using namespace std;
 
 int main()
@@ -16,8 +19,28 @@ begining:
 	cout << "Enter first number: " << endl;
 	cin >> var1;
 
+	if (var1 / 1)
+	{
+	}
+
+	else
+	{
+		cout << "You didn't typed number !!" << endl;
+		return 0;
+	}
+
 	cout << "Enter second number: " << endl;
 	cin >> var2;
+
+	if (var2 / 1)
+	{
+	}
+
+	else
+	{
+		cout << "You didn't typed number !!" << endl;
+		return 0;
+	}
 
 	cout << "What do you want to do with that numbers ?" << endl;
 	cout << "\t+   add" << endl;
