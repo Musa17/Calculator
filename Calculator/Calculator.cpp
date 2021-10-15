@@ -3,10 +3,17 @@
 
 #include "pch.h"
 #include <iostream>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n"; 
+	double var1, var2;
+
+	cout << "Enter first number: ";
+	cin >> var1;
+
+	cout << "Enter second number: ";
+	cin >> var2;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
