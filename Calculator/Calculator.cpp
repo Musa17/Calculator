@@ -9,6 +9,10 @@ int main()
 {
 	double var1, var2;
 
+begining:
+
+	system("cls");
+
 	cout << "Enter first number: " << endl;
 	cin >> var1;
 
@@ -24,6 +28,8 @@ int main()
 	char decision;
 
 	cin >> decision;
+
+	system("cls");
 
 	switch (decision)
 	{
@@ -49,6 +55,16 @@ int main()
 	default:
 		cout << "You typed wrong character" << endl;
 		break;
+	}
+
+	char quitDecision;
+
+	cout << "Do you want to continue ? (Y/N)" << endl;
+	cin >> quitDecision;
+
+	if (quitDecision == 'y' || quitDecision == 'Y')
+	{
+		goto begining;
 	}
 }
 
