@@ -9,11 +9,17 @@ int main()
 {
 	double var1, var2;
 
-	cout << "Enter first number: ";
+	cout << "Enter first number: " << endl;
 	cin >> var1;
 
-	cout << "Enter second number: ";
+	cout << "Enter second number: " << endl;
 	cin >> var2;
+
+	cout << "What do you want to do with that numbers ?" << endl;
+	cout << "\t+   add" << endl;
+	cout << "\t-   substract" << endl;
+	cout << "\t*   multiply" << endl;
+	cout << "\t/   divide" << endl;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
