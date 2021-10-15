@@ -20,6 +20,36 @@ int main()
 	cout << "\t-   substract" << endl;
 	cout << "\t*   multiply" << endl;
 	cout << "\t/   divide" << endl;
+
+	char decision;
+
+	cin >> decision;
+
+	switch (decision)
+	{
+	case '+':
+		cout << var1 << " + " << var2 << " = " << (var1 + var2) << endl;
+		break;
+
+	case '-':
+		cout << var1 << " - " << var2 << " = " << (var1 - var2) << endl;
+		break;
+
+	case '*':
+		cout << var1 << " * " << var2 << " = " << (var1 * var2) << endl;
+		break;
+
+	case '/':
+		if (var2 != 0)
+			cout << var1 << " / " << var2 << " = " << (var1 / var2) << endl;
+		else
+			cout << "You can't divide with 0 :(" << endl;
+		break;
+
+	default:
+		cout << "You typed wrong character" << endl;
+		break;
+	}
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
